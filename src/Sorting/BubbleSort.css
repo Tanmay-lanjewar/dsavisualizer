@@ -1,0 +1,181 @@
+.bubble-page {
+  text-align: center;
+  padding: 20px;
+  overflow-x: hidden;  /* ✅ Prevent horizontal scroll */
+  overflow-y: auto;    /* ✅ Enable vertical scroll for full page */
+  height: 100vh;       /* ✅ Keeps the layout within the viewport height */
+  box-sizing: border-box;
+}
+
+.bubble-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-btn {
+  text-decoration: none;
+  background: #333;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 5px;
+}
+
+.bubble-box-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 40px 0;
+}
+
+.bubble-box {
+  width: 60px;
+  height: 60px;
+  background: #ffffff1a;
+  border:3px solid black;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.bubble-box.active {
+  background: #0f6300;
+  transform: scale(1.1);
+}
+
+.bubble-controls {
+  margin-top: 20px;
+}
+
+.bubble-controls button {
+  margin: 0 10px;
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+input[type="number"] {
+  margin: 0 10px;
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+input[type="text"] {
+  margin: 0 10px;
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+ .bubble-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-btn {
+  text-decoration: none;
+  background: #333;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 5px;
+}
+.bubble-algo-box {
+  background: #ffffff;
+  padding: 18px 22px;
+  margin: 20px auto;
+  border: 2px solid #4caf50;
+  border-radius: 12px;
+  width: 300px;
+  font-size: 16px;
+  font-family: "Segoe UI", sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  
+}
+
+.bubble-algo-box h3 {
+  margin: 0 0 12px;
+  color: #2e7d32; /* dark green */
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 1px solid #c8e6c9;
+  padding-bottom: 6px;
+}
+
+.bubble-algo-box ol {
+  margin: 0;
+  padding-left: 18px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.bubble-algo-box li {
+  margin: 4px 0;
+}
+
+
+
+.bubble-explanation {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+  text-align: center;
+}
+/* Match the card style of .bubble-algo-box but with your requested tweaks */
+.bubble-iterations {
+  background: #ffffff;
+  padding: 18px 22px;
+  margin: 20px auto;
+  border: 2px solid #4caf50;
+  border-radius: 12px;
+  max-width: 400px;                     /* same width as algo box */
+  font-size: 16px;
+  font-family: "Segoe UI", sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  
+}
+
+.bubble-iterations h3 {
+  margin: 0 0 12px;
+  color: #2e7d32;                   /* dark green heading */
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 1px solid #c8e6c9;  /* subtle divider like algo box */
+  padding-bottom: 6px;
+}
+
+.bubble-iterations p {
+  margin: 4px 0;
+  line-height: 1.6;
+  color: #333;
+  word-break: break-word;    /* break long number sequences */
+}
+.bubble-sections {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  max-height: 80vh;         /* max height to prevent huge boxes */
+  overflow-y: auto;         /* vertical scroll if needed */
+}
+
+/* Make sure each card can shrink a bit */
+.bubble-iterations,
+.bubble-algo-box {
+  flex: 1 1 320px;          /* grow & shrink, min width 320px */
+  max-width: 500px;
+  max-height: 270px;          /* allow more room for text */
+  box-sizing: border-box;
+  overflow-x: auto;          /* horizontal scroll if content too wide */
+  word-wrap: break-word;
+}
+
