@@ -10,7 +10,7 @@ import LinearSearch from "./Searching/LinearSearch";
 import BinarySearch from "./Searching/BinarySearch";
 function App() {
   return (
-    <Router>
+
       <Routes>
         {/* Home Route */}
         <Route path="/" element={<HomePage />} />
@@ -23,7 +23,7 @@ function App() {
         <Route path="/linear-search" element={<LinearSearch />}/>
         <Route path="/binary-search" element={<BinarySearch />}/>
       </Routes>
-    </Router>
+
   );
 }
 
